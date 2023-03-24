@@ -1,38 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+prisma, planetscale, React 18 is coming
+server-side streaming
 
-First, run the development server:
+# 2.1 Requirement
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- Take NextJS starter
+- 
+
+# 2.2 Recording Plan
+
+- We are going to build UI on Camera.
+- Tailwind modifiers help open your mind.
+	- people think that CSS framework limit your capability where in reality it doesn't.
+- We are going to build with the fake data. 
+- 
+
+# 3.0 NextJS Setup
+
+- We are going to decide whether you want to use typescript or not.
+- RC - release candidate until everything is validated.
+- Install nextjs
+- Set up tailwind css
+```
+npx install -D tailwind postcss autoprefixer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+Tailwind CSS설치 및 초기화
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p (-p를 붙이면 postcss.config.js파일까지 생성)
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- The tailwind data will show
+- postcss.config and tailwind.config.js gets created.
+- Tell tailwind where we are going to use tailwind in tailwind.config.js
+tailwind.config.js
+- Modify the content so that any file inside the page and components directory will apply tailwind.
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Global.css that is already created modified to below.
 
-## Learn More
+```js
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 4.0 Tailwind
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Pay attention to tailwind style that they write on the class. 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- This is just about adding and combining classname.
+- grid: add display grid.
+- aspect-square: add square.
+- bg-background color. 
+- Shadow: it is hard to make. Instead, you tell the tailwind to make the shadow really well. 
+- When you use other framework, they tend to use certain styles. 
+- There are classname everywhere for Tailwind css and they are not enforcing certain styles. 
+- We are going to make dark mode later. 
+- Images. Talking about the World-class IDE. 
+- TailwindCSS has many classname and is hard to remember. If you want to get an autocomplete, you just need to install Tailwind CSS intellisense.
+- 

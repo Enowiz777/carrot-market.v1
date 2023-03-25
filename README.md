@@ -75,3 +75,38 @@ module.exports = {
 - Images. Talking about the World-class IDE. 
 - TailwindCSS has many classname and is hard to remember. If you want to get an autocomplete, you just need to install Tailwind CSS intellisense.
 - 
+
+# 4.1 Test pt.1
+
+- When you first start with TailwindCSS, you have to go back and forth with the documentation.
+- The more you use tailwind, the easier it gets. 
+- padding, rem (responsive design), 
+- CTRL-SPACE if autocomplete doesn't show.
+- flex flex-col space-y-5: flex, flex column give child margin top and bottom 5pixels.
+
+# 4.2 Test pt.2
+
+- overflow-hidden
+- Add padding bottom to make the card larger. 
+- relative: position relative - top-14 
+- 
+
+# 4.4 Modifier
+
+- If you want to change the checkout button, you can make it to a button. 
+- you can use :hover using the modifier. 
+- Modifier is something that we write
+```
+// when hover over, the background changes to teal.
+hover:bg-teal-500
+```
+- There are hover:, active:, and other modifiers available. Please refer to the documentation.
+- 
+
+# 4.5 Transition
+
+- There are other modifiers. 
+- ring-offset-2 (create some space between the border and the item)
+- put your mouse over; setting css variable. 
+- if you put the word transition, it will make the smooth transition.
+- 

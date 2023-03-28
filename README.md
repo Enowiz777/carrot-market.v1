@@ -110,3 +110,14 @@ hover:bg-teal-500
 - put your mouse over; setting css variable. 
 - if you put the word transition, it will make the smooth transition.
 - 
+
+# 5.0 Tailwind practice
+
+- If you get comfortable with TailwindCSS, you will be efficient as a developer. 
+- Nico recommends investing time on TailwindCSS
+- 
+
+- Designing enter page
+- Notable concepts:
+  - border-b w-full - border bot width full
+  - 

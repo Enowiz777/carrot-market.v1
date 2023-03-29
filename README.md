@@ -121,3 +121,54 @@ hover:bg-teal-500
 - Notable concepts:
   - border-b w-full - border bot width full
   - 
+
+# 5.2 Auth part
+
+- Tailwind plugins - plug that you can use to create the basic style.
+- Install the core plugins called form. 
+- plug-in add extra functions in the configurations.
+- ex: typography - you can use prose.
+- you can use the @tailwindcss/forms.
+```
+npm i @tailwindcss/forms
+```
+add to tailwind.config.js
+
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("@tailwindcss/forms")],
+}
+
+```
+- use relative on the parent and absolute on the child. 
+- 
+
+# 5.3 Home Screen
+
+- Front page will be a list of the product.
+- mapping the array
+
+```js
+      {[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1].map((_, i) => (<div></div>)
+```
+
+- heroicons is the SVG icons.
+- They are useful.
+- 
+
+# 5.4 Item Detail page
+
+- Create a profile.
+- We render similar items.
+- Start with the constraint and padding. 
+- px, py, h, bg(background), flex items-center space-x-3, 
+- w-12, h-12, border-t (boder top), border-b(border bot)
+- 

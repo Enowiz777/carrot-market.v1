@@ -171,4 +171,28 @@ module.exports = {
 - Start with the constraint and padding. 
 - px, py, h, bg(background), flex items-center space-x-3, 
 - w-12, h-12, border-t (boder top), border-b(border bot)
-- 
+
+# 5.5 Upload Item
+
+- Upload screen is what they will see when they click on the plus button. 
+- The technic that everyone uses for the file choice. 
+- Tailwind used: px, py, w-full (width full), 
+- input: hidden; icon in the center, you hide the input with css, the moment you click it will appear on the screen. 
+- htmlFor="input"
+- relative - absolute to set the dollar sign inside the input. 
+- block
+- ring-orange-500: set the color of the ring
+- focus ring-2: create a ring with the boldness 2 on the focus
+
+# 5.6 Community
+
+- space-y-8
+- flex space-x-
+- iterate an array Array.map()
+
+# 5.7 Community Detail
+
+- You can create the community you can have two pages. Index with ID. 
+- Index - /community
+- /community/detailID - route to the detailed pages. 
+- For the code that repeats, you can make them into a component. 

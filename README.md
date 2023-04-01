@@ -196,3 +196,45 @@ module.exports = {
 - Index - /community
 - /community/detailID - route to the detailed pages. 
 - For the code that repeats, you can make them into a component. 
+
+# 5.8 Chats screen
+
+- divide-y-2: line gets thicker; add a border-top to the item that has next to others. 
+- 
+
+# 5.9 Chats Detail page.
+
+- chats to chats/index.tsx
+- TailwindCSS used
+- flex items-center space-x-2.
+- w-1/2 text-sm text-gray-700 p-2 rounded-md.
+- space-x-reverse: add space in reverse.
+- input - fixed - bottom of the screen: 
+  - fixed w-full mx-auto max-w-md bottom-0 inset-x-0
+- create a chat input
+  - focuse:outline-orange-500; 
+
+# 5.10 Profile screen
+
+- TailwindCSS used
+- mt-12, flex item-center
+- w-12 h-12 rounded-full 
+
+# 5.11 Bought, Loved and Sold.
+
+- rename the profile page to index.tsx
+- Add Loved, bought, and sold page in the profile folder.
+
+# 5.12 Edit Profile
+
+- Edit profile will contain ways to edit the profile, which are many inputs. 
+- TailwindCSS: take all the space w-full.
+- input type file looks really ugly so you can hide completely and modify the label
+<label className="cursor-pointer">
+- change input to take only img file. 
+
+# 5.13 Streams
+
+- Aspect-video: you can the aspect ratio of the video 16:9. When we creat the circle, we can use the aspect square.
+- Create a button that can go live. 
+- 

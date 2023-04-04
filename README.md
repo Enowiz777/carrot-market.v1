@@ -238,3 +238,93 @@ module.exports = {
 - Aspect-video: you can the aspect ratio of the video 16:9. When we creat the circle, we can use the aspect square.
 - Create a button that can go live. 
 - 
+
+# 5.14 Stream pt.2
+
+- create a folder called streams. Then, create two files called index.tsx and [id].tsx.
+- Crate a chatroom in the streams/detail page.
+- keep the video and title on the screen.
+- Tailwind used:
+  - keep the video and title on the screen - 
+  - mt-10 pb-16 - h[50vh] overflow-y-scroll.
+
+# 5.15 Add Stream
+
+- Create LiveStream screen
+- Stream is similar to items. 
+- LiveStream is going to be a video.
+- Copy paste the upload form.
+
+# 5.16 Layout pt.1
+
+- Our layout looks ugly on the big screen.
+- We can surround our component with Div.
+- Div will have w-full;max-w-lg(maximum width); center with mx-auto
+- This will create a mobile based app. 
+- We create the navigation and the tab-bar using tailwind.
+- Create a new folder called components.
+  - Inside, create layout.tsx
+  - create a function Layout(): return div.
+  - You do props by setting the interface LayoutProps ```ts
+  interface LayoutProps {
+  title?: string;
+  canGoBack?: boolean;
+  hasTabBar?: boolean;
+  children: React.ReactNode;
+  }
+  ```
+
+- 
+
+# 5.17 Layout part2
+
+- Fix is not going to help when the window is maximized.
+- you have to add max width same as the one you add to the pages. 
+- We need some icons in the navigations.
+- Change the layout to display multiple navigation bar.
+- Change each page to import layout so that they all will display the navBar.
+- layout will make the bottom navbar appear.
+- on the item page, we are going to put the back arrow. 
+```js
+const router = useRouter();
+  const onClick = () => {
+    router.back();
+  };
+  return (
+    <div>
+      <div
+        className={cls(
+          !canGoBack ? "justify-center" : "",
+          "bg-white w-full max-w-xl text-lg px-10 font-medium py-3 fixed text-gray-800 border-b top-0  flex items-center"
+        )}
+      >
+        {canGoBack ? (
+          <button onClick={onClick}>
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M15 19l-7-7 7-7"
+              ></path>
+            </svg>
+          </button>
+        ) : null}
+```
+- Create a back page.
+- 
+
+# 5.18 Conclusions
+
+- UI is complete. 
+- We are going to do backend stuff. 
+- We are going to come back to UI with the real data. 
+- The point of this section is only to practice TailwindCSS. 
+- You can clean the code by looking at the Source Code.
+- 
